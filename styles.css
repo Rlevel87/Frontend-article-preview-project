@@ -1,0 +1,232 @@
+
+
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 94%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'manrope' ,sans-serif;
+    font-size: 13px;
+    background-color: var(--LightGrayishBlue);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+   
+}
+#drawer{
+    position: absolute;
+    margin-left: -9.8rem;
+    margin-top: 1.3rem;
+    width: 315px;
+    height: 250px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.content{
+    z-index: 1;
+    width: 315px;
+    height: 340px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2.1rem;
+    margin-top: 14rem;
+}
+.firstParagraph{
+    color: var(--VeryDarkGrayishBlue);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.secondParagraph{
+    color: var(--DesaturatedDarkBlue);
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 1rem;
+}
+#profileView{   
+    display: flex;
+    z-index: 2;
+    margin-top: 1.8rem;
+}
+#profilePic{
+    width: 45px;
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+.info{
+    line-height: 22px;
+    margin-top: 2px;
+}
+#name{
+    color: var(--VeryDarkGrayishBlue);
+    font-size: 13px;
+    font-weight: 700;
+}
+#date{
+    color: var(--DesaturatedDarkBlue);
+    font-weight: 400;
+}
+#shareArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+    margin-left: 40px;
+    margin-top: .5rem;
+    width: 36px;
+    height: 34px;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+#shareView{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    background-color: var(--VeryDarkGrayishBlue);
+    margin-top: 30.5rem;
+    height: 4.5rem;
+    width: 315px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+.hiddenShareItems{
+    margin-right: .7rem;
+}
+.sharePics{
+    margin: .6rem;
+}  
+#hiddenShareMessage{
+    float: left;
+    margin-top: .8rem;
+    color: var(--GrayishBlue);
+    letter-spacing: 3px;
+}
+#hiddenArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--GrayishBlue);
+    margin-left: 40px;
+    width: 34px;
+    height: 34px;
+    border-radius: 5rem;
+    cursor: pointer;
+    
+}
+.sharePicsLast{
+    margin-right: 2rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1024px){
+    .container{
+        flex-direction: row;
+    }
+    #drawer{
+        position: absolute;
+        margin-left: 8rem;
+        margin-top: -6.5rem;
+        width: 315px;
+        height: 260px;
+        border-bottom-left-radius: 1rem;
+          
+    }
+    .content{
+        z-index: 1;
+        width: 390px;
+        height: 260px;
+        background-color: hsl(0, 0%, 100%);
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding: 1.7rem;
+        margin-left: 24rem;
+        margin-top: 3.3rem;
+    }
+    #profileView{   
+        display: flex;
+        z-index: 2;
+        margin-top: 1rem;
+    }
+    .firstParagraph{
+        color: var(--VeryDarkGrayishBlue);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    .secondParagraph{
+        color: var(--DesaturatedDarkBlue);
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: 1rem;
+    }
+    #shareArrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 90%);
+        margin-left: 110px;
+        margin-top: .5rem;
+        width: 36px;
+        height: 34px;
+        border-radius: 5rem;
+        cursor: pointer;
+    }
+    #shareView{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        position: absolute;
+        background-color: var(--VeryDarkGrayishBlue);
+        margin-top: 3.5rem;
+        margin-left: 41.5rem;
+        height: 4.5rem;
+        width: 315px;
+        border-radius: 1rem;
+    }
+    #shareBoxArrow{
+        position: absolute;
+        margin-top: 4.4rem;
+        margin-left: -1.2rem;
+        background-color: var(--VeryDarkGrayishBlue);
+        border: var(--DesaturatedDarkBlue);
+        border-width: 0px 10px 10px 0px;
+        padding: 10px;
+        transform: rotate(45deg);
+        -webkit-transform: 45deg;
+    }
+    #hiddenArrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: var(--GrayishBlue);
+        margin-top: 10.2rem;
+        margin-left: -1.1rem;
+        width: 34px;
+        height: 34px;
+        border-radius: 5rem;
+        cursor: pointer;    
+    }
+}
