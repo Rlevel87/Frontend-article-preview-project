@@ -37,7 +37,7 @@ body{
 .content{
     z-index: 1;
     width: 315px;
-    height: 360px;
+    height: 350px;
     background-color: hsl(0, 0%, 100%);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
